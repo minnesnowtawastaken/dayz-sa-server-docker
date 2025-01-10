@@ -1,5 +1,4 @@
-FROM steamcmd/steamcmd:ubuntu-18
-# steamcmd doesnt work properly on ubuntu 20 due to misssing 32 bit deps
+FROM steamcmd/steamcmd
 
 ENV DEBIAN_FRONTEND=noninteractive
 
