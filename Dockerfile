@@ -52,8 +52,7 @@ USER dayz
 # update steamcmd & validate user permissions
 RUN steamcmd +quit
 
-# currently linux server is experimental only
-ENV APP_ID="1042420"
+ENV APP_ID="223350"
 
 # reset cmd & define entrypoint
 CMD [ "start" ]
