@@ -7,10 +7,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y apt-utils && \
     apt-get install -y \
-        lib32gcc1 \
-        libcap-dev \
-        libcurl4 \
-        libcurl4-openssl-dev \
+        lib32gcc-s1 \
     && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/*
@@ -25,7 +22,7 @@ ENV STEAM_CMD_PASSWORD=""
 
 # base dirs
 RUN mkdir -p ${BASE_DIR} && \
-    groupadd dayz && \    
+    groupadd dayz && \
     useradd -m -d ${HOME} -s /bin/bash -g dayz dayz && \
     mkdir -p ${SERVER_DIR}
 
