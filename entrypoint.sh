@@ -14,7 +14,13 @@ function startGame() {
     cd ${SERVER_DIR}
     ./DayZServer \
         -config="serverDZ.cfg" \
-        ${EXTRA_START_ARGS}
+    	-port=2302 \
+    	-BEpath=battleye \
+    	-profiles=profiles \
+    	-dologs \
+    	-adminlog \
+    	-netlog \
+    	-freezecheck
 }
 
 case "$1" in
